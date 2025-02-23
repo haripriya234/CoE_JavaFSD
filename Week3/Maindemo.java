@@ -1,4 +1,5 @@
-package freesoft;
+
+package Week3;
 
 import java.awt.DisplayMode;
 import java.sql.Connection;
@@ -47,3 +48,4 @@ public class Maindemo {
 	}
 
 }
+

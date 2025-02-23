@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Fitness Planner</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="fit">
+      <a href="index.html">InnovateX</a>
+    </div>
+    <a href="contact.html">CONTACT</a>
+    <a href="speakers.html">SPEAKERS</a>
+    <a href="schedule.html">SCHEDULE</a>
+    <a href="about.html">ABOUT</a>
+    <a href="index.html">HOME</a>
+  </div>
+
+  <main>
+    <section class="schedule">
+        <h1>Event Schedule</h1>
+        <p>Join us for an exciting lineup of speakers, workshops, and networking sessions.</p>
+        
+        <div id="schedule-container"></div>
+        
+        <h2>Add a Schedule Event</h2>
+        <form id="schedule-form">
+            <input type="text" id="time" placeholder="Time (e.g., 10:00 AM)" required>
+            <input type="text" id="event" placeholder="Event Name" required>
+            <input type="text" id="speaker" placeholder="Speaker Name" required>
+            <button type="submit">Add Event</button>
+        </form>
+    </section>
+</main>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const scheduleData = [
+            { time: "09:00 AM", event: "Opening Keynote", speaker: "Dr. Alice Johnson" },
+            { time: "10:30 AM", event: "Panel Discussion: AI & Future", speaker: "Various" },
+            { time: "12:00 PM", event: "Networking Lunch", speaker: "-" },
+            { time: "02:00 PM", event: "Workshop: Cybersecurity Trends", speaker: "John Doe" },
+            { time: "04:00 PM", event: "Closing Remarks", speaker: "CEO of InnovateX" }
+        ];
+        
+        const container = document.getElementById("schedule-container");
+        const form = document.getElementById("schedule-form");
+        
+        function renderSchedule() {
+            container.innerHTML = "";
+            scheduleData.forEach(session => {
+                let div = document.createElement("div");
+                div.classList.add("schedule-item");
+                div.innerHTML = `<strong>${session.time}</strong> - ${session.event} (Speaker: ${session.speaker})`;
+                container.appendChild(div);
+            });
+        }
+        
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const time = document.getElementById("time").value;
+            const eventName = document.getElementById("event").value;
+            const speaker = document.getElementById("speaker").value;
+            
+            if (time && eventName && speaker) {
+                scheduleData.push({ time, event: eventName, speaker });
+                renderSchedule();
+                form.reset();
+            }
+        });
+        
+        renderSchedule();
+    });
+</script>
+  
+</body>
+
+</html>

@@ -1,4 +1,5 @@
-package freesoft;
+
+ppackage Week3;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

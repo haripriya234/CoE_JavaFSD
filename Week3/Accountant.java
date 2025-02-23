@@ -1,4 +1,4 @@
-package freesoft;
+package Week3;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -122,10 +122,20 @@ public class Accountant {
 			PreparedStatement p3=conn.prepareStatement(query3);
 			p3.setInt(1, n1);
 			int h=p3.executeUpdate();
-			if(h>0) {
+			if(h>0) { 
 				System.out.println("Deleted successfully");
 			}
 			break;
+		case 5:
+			System.out.println("Students with due");
+			String query6="select * from students where due>0";
+			PreparedStatement p6=conn.prepareStatement(query6);
+			ResultSet rs1=p6.executeQuery();
+			while(rs.next()) {
+				System.out.println("ID : "+rs.getInt(1)+" "+" NAME: "+" "+rs.getString(2)+" "+"EMAIL: "+" "+rs.getString(3)+
+				"COURSE : "+rs.getString(4)+" "+" FEE: "+" "+rs.getDouble(5)+" "+"PAID: "+" "+rs.getDouble(6)+
+				"Due: "+rs.getDouble(7)+" "+" Address: "+" "+rs.getString(8)+" "+"Phone: "+" "+rs.getLong(9)
+						);
 		default:
 			break;
 		}

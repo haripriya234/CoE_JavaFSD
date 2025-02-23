@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Fitness Planner</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="fit">
+      <a href="index.html">InnovateX</a>
+    </div>
+    <a href="contact.html">CONTACT</a>
+    <a href="speakers.html">SPEAKERS</a>
+    <a href="schedule.html">SCHEDULE</a>
+    <a href="about.html">ABOUT</a>
+    <a href="index.html">HOME</a>
+  </div>
+
+      
+    
+    <main>
+      <section class="speakers">
+          <h1>Meet Our Speakers</h1>
+          <p>Get to know the inspiring thought leaders and innovators speaking at InnovateX.</p>
+          
+          <div id="speakers-container" class="speakers-grid"></div>
+          
+          <h2>Add a Speaker</h2>
+          <form id="speaker-form">
+              <input type="text" id="name" placeholder="Speaker Name" required>
+              <input type="text" id="topic" placeholder="Topic" required>
+              
+              <button type="submit">Add Speaker</button>
+          </form>
+      </section>
+  </main>
+  
+  
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const speakersData = [
+              { name: "Dr. Alice Johnson", topic: "The Future of AI"},
+              { name: "John Doe", topic: "Cybersecurity in 2025" },
+              { name: "Emma Watson", topic: "Women in Tech" }
+          ];
+          
+          const container = document.getElementById("speakers-container");
+          const form = document.getElementById("speaker-form");
+          
+          function renderSpeakers() {
+              container.innerHTML = "";
+              speakersData.forEach(speaker => {
+                  let div = document.createElement("div");
+                  div.classList.add("speaker-card");
+                  div.innerHTML = `
+                      
+                      <h3>${speaker.name}</h3>
+                      <p>${speaker.topic}</p>
+                  `;
+                  container.appendChild(div);
+              });
+          }
+          
+          form.addEventListener("submit", function(event) {
+              event.preventDefault();
+              const name = document.getElementById("name").value;
+              const topic = document.getElementById("topic").value;
+              
+              
+              if (name && topic && image) {
+                  speakersData.push({ name, topic});
+                  renderSpeakers();
+                  form.reset();
+              }
+          });
+          
+          renderSpeakers();
+      });
+  </script>
+</body>
+
+</html>
