@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
 :root {
@@ -69,6 +72,3 @@ button:focus-visible {
   }
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

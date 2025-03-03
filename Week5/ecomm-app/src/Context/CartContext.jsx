@@ -1,26 +1,31 @@
-import { createContext, useReducer, useContext } from "react";
+import { createContext, useContext, useReducer } from "react";
 
-const CartContext = createContext();
+export const CartContext = createContext(); // Make sure this is exported
+
+export const useCart = () => {
+  return useContext(CartContext);
+};
 
 const cartReducer = (state, action) => {
   switch (action.type) {
     case "ADD_TO_CART":
-      return [...state, action.payload];
+      return { ...state, cart: [...state.cart, action.payload] };
     case "REMOVE_FROM_CART":
-      return state.filter((item) => item.id !== action.payload);
+      return {
+        ...state,
+        cart: state.cart.filter((item) => item.id !== action.payload.id),
+      };
     default:
       return state;
   }
 };
 
 export const CartProvider = ({ children }) => {
-  const [cart, dispatch] = useReducer(cartReducer, []);
+  const [state, dispatch] = useReducer(cartReducer, { cart: [] });
 
   return (
-    <CartContext.Provider value={{ cart, dispatch }}>
+    <CartContext.Provider value={{ cart: state.cart, dispatch }}>
       {children}
     </CartContext.Provider>
   );
 };
-
-export const useCart = () => useContext(CartContext);
