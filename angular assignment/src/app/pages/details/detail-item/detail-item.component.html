@@ -1,0 +1,27 @@
+
+<div class="card" style="width: 18rem;">
+
+    <img src="http://localhost:8090/{{animal.image}}" 
+    class="card-img-top" 
+    alt="{{animal.breedName}}">
+    
+    <div class="card-body">
+
+        <h5 class="card-title">{{animal.breedName | uppercase}}</h5> 
+        <p class="card-text">
+            <strong>Age:</strong> {{animal.age}} years <br>
+            <strong>Color:</strong> {{animal.color}} <br>
+            <strong>Health:</strong> {{animal.healthCondition}} <br>
+            <strong>DOB:</strong> {{animal.dob}} <br>
+            <strong>Gender:</strong> {{animal.gender}} <br>
+            <strong>Weight:</strong> {{animal.weight}} kg <br>
+            <strong>Status:</strong> 
+            <span [ngClass]="{'text-success': animal.adoptionStatus === 'Available', 'text-danger': animal.adoptionStatus === 'Adopted'}">
+                {{animal.adoptionStatus}}
+            </span>
+        </p>
+    </div>
+</div>
+
+
+

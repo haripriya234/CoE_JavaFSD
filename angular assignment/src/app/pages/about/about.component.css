@@ -1,0 +1,23 @@
+
+.about-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+
+.about-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.about-subtitle {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 10px;
+}

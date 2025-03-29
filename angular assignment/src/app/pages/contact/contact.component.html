@@ -1,0 +1,34 @@
+<div class="container mt-4">
+    <h3 class="text-center">Contact Form</h3>
+    <form (submit)="submitForm()">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" class="form-control" [(ngModel)]="name" name="name" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" class="form-control" [(ngModel)]="email" name="email" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" id="phone" class="form-control" [(ngModel)]="phone" name="phone" required />
+        </div>
+
+        <div class="mb-3">
+            <label for="reason" class="form-label">Why do you need to contact us?</label>
+            <textarea id="reason" class="form-control" rows="4" [(ngModel)]="reason" name="reason" required></textarea>
+        </div> 
+
+        
+        <div class="alert alert-danger" *ngIf="errors.length > 0">
+            <ul>
+                <li *ngFor="let error of errors">{{ error }}</li>
+            </ul>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+</div>
+

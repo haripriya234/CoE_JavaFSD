@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "438616619810",
+    "project_id": "cities-fe5d4",
+    "storage_bucket": "cities-fe5d4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438616619810:android:cf26b1613489dcf08d837b",
+        "android_client_info": {
+          "package_name": "com.example.fassign"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7xzC4y9qjExAgHpWc7fovw5mTqbQ7Akc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

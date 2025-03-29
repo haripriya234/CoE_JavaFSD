@@ -1,0 +1,258 @@
+{
+  "animals": [
+    {
+      "id": "1",
+      "breedName": "Golden Retriever",
+      "age": 2,
+      "color": "Golden",
+      "healthCondition": "Healthy",
+      "dob": "2023-03-15",
+      "gender": "Male",
+      "weight": "25 kg",
+      "adoptionStatus": "Available",
+      "image": "ani1.jpeg"
+    },
+    {
+      "id": "2",
+      "breedName": "Persian Cat",
+      "age": 3,
+      "color": "White",
+      "healthCondition": "Vaccinated",
+      "dob": "2022-06-10",
+      "gender": "Female",
+      "weight": "6 kg",
+      "adoptionStatus": "Adopted",
+      "image": "ani2.jpeg"
+    },
+    {
+      "id": "3",
+      "breedName": "German Shepherd",
+      "age": 4,
+      "color": "Black and Tan",
+      "healthCondition": "Needs Special Diet",
+      "dob": "2021-09-05",
+      "gender": "Male",
+      "weight": "30 kg",
+      "adoptionStatus": "Available",
+      "image": "ani3.jpeg"
+    },
+    {
+      "id": "4",
+      "breedName": "Siberian Husky",
+      "age": 2,
+      "color": "Grey and White",
+      "healthCondition": "Healthy",
+      "dob": "2023-01-20",
+      "gender": "Female",
+      "weight": "20 kg",
+      "adoptionStatus": "Available",
+      "image": "ani4.jpg"
+    },
+    {
+      "id": "5",
+      "breedName": "British Shorthair",
+      "age": 5,
+      "color": "Blue-Gray",
+      "healthCondition": "Healthy",
+      "dob": "2020-07-30",
+      "gender": "Male",
+      "weight": "7 kg",
+      "adoptionStatus": "Available",
+      "image": "ani5.jpeg"
+    },
+    {
+      "id": "6",
+      "breedName": "Labrador Retriever",
+      "age": 3,
+      "color": "Chocolate",
+      "healthCondition": "Healthy",
+      "dob": "2022-05-12",
+      "gender": "Female",
+      "weight": "28 kg",
+      "adoptionStatus": "Adopted",
+      "image": "ani6.jpeg"
+    },
+    {
+      "id": "7",
+      "breedName": "Bengal Cat",
+      "age": 4,
+      "color": "Brown Spotted",
+      "healthCondition": "Healthy",
+      "dob": "2021-03-10",
+      "gender": "Male",
+      "weight": "8 kg",
+      "adoptionStatus": "Available",
+      "image": "ani7.jpeg"
+    },
+    {
+      "id": "8",
+      "breedName": "Doberman",
+      "age": 3,
+      "color": "Black and Rust",
+      "healthCondition": "Requires Training",
+      "dob": "2022-02-15",
+      "gender": "Male",
+      "weight": "32 kg",
+      "adoptionStatus": "Available",
+      "image": "ani8.jpg"
+    },
+    {
+      "id": "9",
+      "breedName": "Ragdoll Cat",
+      "age": 2,
+      "color": "Cream and Brown",
+      "healthCondition": "Healthy",
+      "dob": "2023-06-18",
+      "gender": "Female",
+      "weight": "5 kg",
+      "adoptionStatus": "Available",
+      "image": "ani9.jpg"
+    },
+    {
+      "id": "10",
+      "breedName": "Shiba Inu",
+      "age": 3,
+      "color": "Red",
+      "healthCondition": "Healthy",
+      "dob": "2022-08-22",
+      "gender": "Male",
+      "weight": "10 kg",
+      "adoptionStatus": "Adopted",
+      "image": "ani10.jpeg"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "cde4",
+      "name": "sadkansd",
+      "email": "sadkasdk@gmail.com",
+      "phone": "9839479847",
+      "reason": "djfhjsncsidurncgdjsnciusenfcdsjfahdjdsh ckshd"
+    },
+    {
+      "id": "pet1",
+      "name": "Alice Brown",
+      "email": "alice.brown@example.com",
+      "phone": "9876543210",
+      "reason": "Interested in adopting a Labrador puppy."
+    },
+    {
+      "id": "pet2",
+      "name": "Mark Wilson",
+      "email": "mark.wilson@example.com",
+      "phone": "8765432109",
+      "reason": "Looking for a rescue cat for my family."
+    },
+    {
+      "id": "pet3",
+      "name": "Sophia Lee",
+      "email": "sophia.lee@example.com",
+      "phone": "7654321098",
+      "reason": "Want to volunteer at the pet shelter."
+    },
+    {
+      "id": "pet4",
+      "name": "James Anderson",
+      "email": "james.anderson@example.com",
+      "phone": "6543210987",
+      "reason": "Need information on pet adoption fees."
+    },
+    {
+      "id": "pet5",
+      "name": "Emma Johnson",
+      "email": "emma.johnson@example.com",
+      "phone": "5432109876",
+      "reason": "Searching for a hypoallergenic dog breed."
+    },
+    {
+      "id": "pet6",
+      "name": "David Miller",
+      "email": "david.miller@example.com",
+      "phone": "4321098765",
+      "reason": "Want to donate food and supplies to the shelter."
+    },
+    {
+      "id": "pet7",
+      "name": "Olivia Smith",
+      "email": "olivia.smith@example.com",
+      "phone": "3210987654",
+      "reason": "Looking for a small breed dog for an apartment."
+    },
+    {
+      "id": "pet8",
+      "name": "Michael Thompson",
+      "email": "michael.thompson@example.com",
+      "phone": "2109876543",
+      "reason": "Need help rehoming my pet due to relocation."
+    },
+    {
+      "id": "pet9",
+      "name": "Rachel Green",
+      "email": "rachel.green@example.com",
+      "phone": "1098765432",
+      "reason": "Interested in fostering a pet temporarily."
+    },
+    {
+      "id": "pet10",
+      "name": "Daniel White",
+      "email": "daniel.white@example.com",
+      "phone": "9988776655",
+      "reason": "Looking for a companion dog for my elderly parents."
+    },
+    {
+      "id": "7fae",
+      "name": "Hari Priya R ",
+      "email": "priyaranganathan2003@gmail.com",
+      "phone": "6382284841",
+      "reason": "kkjhdsakahdsfk"
+    },
+    {
+      "id": "a7fe",
+      "name": "Hari",
+      "email": "hari234@gmail.com",
+      "phone": "9876546778",
+      "reason": "Would like to adopt a cat and want to visit them this weekend"
+    },
+    {
+      "id": "c804",
+      "name": "Hari",
+      "email": "hari234@gmail.com",
+      "phone": "9876546778",
+      "reason": "Would like to adopt a cat and want to visit them this weekend"
+    }
+  ],
+  "contactresponses": [
+    {
+      "id": "93f0",
+      "contactId": "pet3",
+      "email": "sophia.lee@example.com",
+      "subject": "abcd dfsf",
+      "message": "rgnceirtinciireyin",
+      "respondedAt": "2025-03-23T08:03:24.001Z"
+    },
+    {
+      "id": "5efe",
+      "contactId": "pet1",
+      "email": "alice.brown@example.com",
+      "subject": "jskdka",
+      "message": "lsadhla",
+      "respondedAt": "2025-03-24T11:30:53.704Z"
+    },
+    {
+      "id": "db5a",
+      "contactId": "pet3",
+      "email": "sophia.lee@example.com",
+      "subject": "Realted to adopt",
+      "message": "I wish to adopt a cat and like to visit them this weekend.",
+      "respondedAt": "2025-03-29T14:53:00.592Z"
+    },
+    {
+      "id": "f7d3",
+      "contactId": "a7fe",
+      "email": "hari234@gmail.com",
+      "subject": "Response to visit",
+      "message": "Glad to receive you during the weekend",
+      "respondedAt": "2025-03-29T14:57:54.324Z"
+    }
+  ]
+}

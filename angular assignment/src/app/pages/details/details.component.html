@@ -1,0 +1,23 @@
+
+<div class="details-container">
+    <app-detail-item *ngFor="let x of animalList" [animal]="x" ></app-detail-item>
+</div>
+
+<label for="genderFilter">Filter by Gender:</label>
+<select id="genderFilter" [(ngModel)]="selectedGender">
+    <option value="All">All</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+</select>
+<div class="row">
+    <div *ngFor="let animal of animalList | filterservice:selectedGender" class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5>{{ animal.breedName | uppercase }}</h5>
+                <p><strong>Gender:</strong> {{ animal.gender }}</p>
+                <p><strong>Age:</strong> {{ animal.age }} years</p>
+               
+            </div>
+        </div>
+    </div>
+</div>
